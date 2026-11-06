@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çengelengi'yi indir</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Çengelengi: Bulmaca çöz, İngilizce öğren">
+<meta property="og:description" content="Türkçe ipucunu oku, İngilizce kelimeyi bul. iPhone ve Android'de ücretsiz.">
+<meta property="og:image" content="https://yenerahmetfahri.github.io/cengelengi/img/og.jpg">
+<script>
+  // Tek indirme bağlantısı (reklam, sosyal medya, QR): iPhone/iPad → App Store, Android → Google Play, diğerleri (bilgisayar)
+  // → tanıtım sayfası. ?k=instagram gibi bir kaynak Play'e utm_source olarak, tanıtım sayfasına ?k= olarak geçer.
+  (function () {
+    var ua = navigator.userAgent;
+    var k = new URLSearchParams(location.search).get('k') || '';
+    if (!/^[A-Za-z0-9_-]{1,32}$/.test(k)) k = '';
+    var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    var url;
+    if (ios) url = 'https://apps.apple.com/tr/app/id6815218877';
+    else if (/Android/.test(ua)) url = 'https://play.google.com/store/apps/details?id=com.yenerahmetfahri.bulmaca'
+      + (k ? '&referrer=' + encodeURIComponent('utm_source=' + k + '&utm_medium=indir') : '');
+    else url = '../' + (k ? '?k=' + k : '');
+    location.replace(url);
+  })();
+</script>
+<style>
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; text-align: center; font: 800 17px system-ui, -apple-system, sans-serif;
+  background: #59CC01; color: #fff; }
+img.logo { width: 200px; margin: 0 auto 18px; display: block; }
+.b { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+.b img { height: 52px; }
+a { color: #fff; }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="../img/logo.png" alt="Çengelengi">
+  <div>Mağazaya yönlendiriliyorsun…</div>
+  <div class="b">
+    <a href="https://apps.apple.com/tr/app/id6815218877"><img src="../img/app-store-tr.svg" alt="App Store'dan İndirin"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.yenerahmetfahri.bulmaca"><img src="../img/google-play-tr.png" alt="Google Play'den İndirin"></a>
+  </div>
+  <p><a href="../">Tanıtım sayfası</a></p>
+</main>
+</body>
+</html>
