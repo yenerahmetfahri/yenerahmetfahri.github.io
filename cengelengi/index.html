@@ -91,7 +91,7 @@ section { padding: 72px 0; }
 .hero-art { position: relative; height: 100%; min-height: 560px; display: flex; align-items: flex-end; justify-content: center; }
 .hero-art .phone { position: absolute; bottom: 0; right: 4%; width: min(300px, 60%); border-radius: 36px 36px 0 0; overflow: hidden;
   transform: rotate(4deg) translateY(20px); box-shadow: 0 30px 60px rgba(20,60,0,.35); }
-.hero-art .gel { position: relative; width: min(330px, 64%); margin-right: 32%; z-index: 2; filter: drop-shadow(0 18px 24px rgba(20,60,0,.3)); }
+.hero-art .gel { position: relative; width: min(250px, 50%); margin-right: 36%; z-index: 2; filter: drop-shadow(0 18px 24px rgba(20,60,0,.3)); }
 .hero-art::before { content: ''; position: absolute; left: 0; right: 20%; bottom: -120px; height: 520px; border-radius: 50%;
   background: radial-gradient(closest-side, rgba(255,250,220,.95), rgba(255,246,200,.5) 50%, transparent); }
 .hero-wave { display: block; width: 100%; height: 60px; margin-top: -1px; }
@@ -138,7 +138,8 @@ section { padding: 72px 0; }
 .try-end .big { font-size: clamp(30px, 5vw, 44px); font-weight: 900; color: var(--ink); margin: 6px 0 6px; }
 .try-end p { color: var(--sub); font-size: 18px; margin: 0 0 20px; }
 .try-end .stores { justify-content: center; margin-bottom: 14px; }
-.try-end img.gel { width: 150px; margin: 0 auto; }
+.try-end img.gel { width: 130px; margin: 0 auto; }
+img.gel { height: auto; }
 @keyframes rise { from { opacity: 0; transform: translateY(24px) scale(.96); } }
 .note { color: var(--sub); font-size: 15px; margin-top: 14px; }
 
@@ -184,7 +185,7 @@ section { padding: 72px 0; }
   box-shadow: 0 30px 70px rgba(122,47,196,.35); }
 .cta h2 { color: #fff; text-align: left; text-shadow: 0 4px 0 var(--pur-d); }
 .cta p { font-size: 19px; margin: 12px 0 22px; color: #F3E6FF; max-width: 480px; }
-.cta .gel { width: 220px; filter: drop-shadow(0 16px 20px rgba(40,10,80,.35)); }
+.cta .gel { width: 200px; filter: drop-shadow(0 16px 20px rgba(40,10,80,.35)); }
 .cta .qr { box-shadow: 0 14px 30px rgba(40,10,80,.3); }
 
 footer { padding: 56px 0 calc(40px + env(safe-area-inset-bottom)); text-align: center; color: var(--sub); font-size: 15px; }
@@ -217,14 +218,14 @@ footer .mark { width: 92px; margin: 0 auto 6px; opacity: .9; }
   .qr { margin-left: auto; margin-right: auto; }
   .hero-art { min-height: 380px; }
   .hero-art .phone { width: 46%; right: 6%; }
-  .hero-art .gel { width: 52%; margin-right: 34%; }
+  .hero-art .gel { width: 40%; margin-right: 40%; }
   .steps, .feats { grid-template-columns: 1fr; }
   .steps { gap: 30px; }
   .cta { grid-template-columns: 1fr; text-align: center; padding: 40px 22px; }
   .cta h2 { text-align: center; }
   .cta p { margin-left: auto; margin-right: auto; }
   .cta .stores, .cta .qr { justify-content: center; margin-left: auto; margin-right: auto; }
-  .cta .gel { width: 170px; margin: 0 auto; order: -1; }
+  .cta .gel { width: 150px; margin: 0 auto; order: -1; }
   section { padding: 56px 0; }
 }
 @media (min-width: 861px) and (max-width: 1060px) { .feats { grid-template-columns: repeat(2, 1fr); } }
@@ -267,7 +268,7 @@ footer .mark { width: 92px; margin: 0 auto 6px; opacity: .9; }
     </div>
     <div class="hero-art" aria-hidden="true">
       <img class="phone" src="img/1_bulmaca.webp" alt="">
-      <img class="gel" src="img/gelengi.webp" alt="" width="408" height="360">
+      <img class="gel" src="img/gelengi.webp" alt="" width="500" height="450">
     </div>
   </div>
   <svg class="hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V28C240 2 480 0 720 22s480 40 720 6v32z"/></svg>
@@ -292,7 +293,7 @@ footer .mark { width: 92px; margin: 0 auto 6px; opacity: .9; }
           <div class="btns" id="btns"></div>
         </div>
         <div class="try-end">
-          <img class="gel" src="img/gelengi.webp" alt="" width="170" height="150">
+          <img class="gel" src="img/gelengi.webp" alt="" width="500" height="450">
           <div class="big" id="endTitle">6 kelimeden 4'ünü bildin!</div>
           <p>Uygulamada A1'den C2'ye 500 bulmaca seni bekliyor.</p>
           <div class="stores" style="justify-content:center">
@@ -380,7 +381,7 @@ footer .mark { width: 92px; margin: 0 auto 6px; opacity: .9; }
             <div><b>Telefonunla okut</b><span>iPhone'da App Store, Android'de Google Play açılır.</span></div>
           </div>
         </div>
-        <img class="gel" src="img/gelengi.webp" alt="El sallayan Gelengi" width="220" height="194" loading="lazy">
+        <img class="gel" src="img/gelengi.webp" alt="El sallayan Gelengi" width="500" height="450" loading="lazy">
       </div>
     </div>
   </section>
